@@ -1,6 +1,6 @@
 {
-  "name": "react-folio",
-  "version": "0.1.0",
+  "name": "kalmix",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
