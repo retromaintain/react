@@ -47,6 +47,7 @@ function IndexPage() {
     {/* Moon */}
     <div>
     <Player
+      autoplay
       className="absolute top-0 left-0 transform-gpu scale-110 md:scale-150 moon"
       loop
       speed={0.2}
