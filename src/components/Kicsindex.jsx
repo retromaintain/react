@@ -136,14 +136,16 @@ export default function Kicsindex() {
         />
       </div>
       <div className="flex justify-end mt-2 h-auto">
-        <FaGithub
+        {/* <FaGithub
           className="z-5 text-gray-600 text-center inline ml-2 mt-2 align-middle hover:opacity-10 transition-all duration-300"
           size={32}
-        />
+        /> */}
+        <a href="https://kics.netlify.app/" target="_blank" rel="noreferrer">
         <PiLinkSimpleDuotone
           className="z-5 text-blue-400 text-center inline mr-2 ml-2 mt-2 align-middle hover:opacity-10 transition-all duration-300"
           size={32}
         />
+        </a>
       </div>
       <hr className="border-gray-300 opacity-10 mt-4" />
 

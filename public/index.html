@@ -70,17 +70,49 @@
     <script>
       //declare body class and add preloader-site class
       $(document).ready(function ($) {
-        var Body = $("body");
-        Body.addClass("preloader-site");
-      });
+  var Body = $("body");
+  var preloaderCookie = getCookie("preloaderShown");
 
-      $(window).load(function () {
-        setTimeout(function () {
-          $(".preloader-wrapper").fadeOut(300, function () {
-            $("body").removeClass("preloader-site");
-          });
-        }, 100);
-      });
+  if (!preloaderCookie) {
+    Body.addClass("preloader-site");
+  } else {
+    $(".preloader-wrapper").hide();
+  }
+});
+
+$(window).load(function () {
+  setTimeout(function () {
+    $(".preloader-wrapper").fadeOut(500, function () {
+      $("body").removeClass("preloader-site");
+      setCookie("preloaderShown", "true", 365); // Set the cookie to indicate preloader has been shown
+    });
+  }, 300);
+});
+
+// Function to get a cookie value
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// Function to set a cookie value
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toGMTString();
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+
     </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" class="!bg-black"></div>

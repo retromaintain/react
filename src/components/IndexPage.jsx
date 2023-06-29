@@ -27,7 +27,7 @@ function IndexPage() {
               <h1 data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" className="lg:ml-4 title primary-color-shadow text-3xl lg:text-6xl xl:text-9xl font-black text-gray-300 text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">
                 Kalmix,
               </h1>
-              <h1 data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" className="title primary-color-shadow text-3xl lg:text-6xl xl:text-9xl font-black text-gray-300 text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">
+              <h1 data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" data-scroll-delay="1" className="title primary-color-shadow text-3xl lg:text-6xl xl:text-9xl font-black text-gray-300 text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">
                 <RandomizedText className="random-word" />
               </h1>
               <hr className="w-1/2 md:w-1/4 my-4 md:my-8 border-gray-600 hidden lg:block" />
@@ -45,15 +45,14 @@ function IndexPage() {
             <div className="w-1/2 lg:w-full sm:w-2/5 h-64 md:h-auto md:w-auto m-auto flex items-center overflow-hidden z-50">
   <div className="relative z-50" >
     {/* Moon */}
+    <div>
     <Player
-      autoplay
-      data-scroll data-scroll-speed="9"
       className="absolute top-0 left-0 transform-gpu scale-110 md:scale-150 moon"
       loop
       speed={0.2}
       src="https://assets3.lottiefiles.com/packages/lf20_0hwoSNGpaK.json"
     ></Player>
-    
+    </div>
     {/* Astronaut */}
     <div data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
     <Player

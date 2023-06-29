@@ -19,6 +19,7 @@ export default function PorfolioIndex() {
     </h1>
     <p className="mt-4 text-font text-center text-gray-600 lg:text-xl">Here you can see in more detail some of my web-development projects. <br /> Just <PiCursorClickFill className="inline" /> them to see the sites in action.</p>
     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+      <a href="https://gpt-on-react.vercel.app/ " target="_blank">
       <div
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110 hover:border hover:border-indigo-500 transition-all"
         style={{
@@ -38,6 +39,8 @@ export default function PorfolioIndex() {
             </div>
         </div>
       </div>
+      </a>
+      <a href="https://internetrepdom.github.io/" target="_blank">
       <div
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110 hover:border hover:border-indigo-500 transition-all"
         style={{
@@ -56,6 +59,8 @@ export default function PorfolioIndex() {
           </div>
         </div>
       </div>
+      </a>
+      <a href="https://mixser.com.do/" target="_blank">
       <div
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110  hover:border hover:border-orange-500 transition-all"
         style={{
@@ -74,6 +79,9 @@ export default function PorfolioIndex() {
             </div>
         </div>
       </div>
+      </a>
+      
+      <a href="https://kalmix.github.io/pybin/" target="_blank">
       <div
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110 hover:border hover:border-green-500 transition-all"
         style={{
@@ -92,6 +100,7 @@ export default function PorfolioIndex() {
             </div>
         </div>
       </div>
+      </a>
     </div>
   </div>
 </section>
