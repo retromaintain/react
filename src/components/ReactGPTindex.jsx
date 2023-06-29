@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiAxios, SiOpenai } from "react-icons/si";
 import { PiLinkSimpleDuotone } from "react-icons/pi";
-import { Button } from "@material-tailwind/react";
 import { FaGithub } from "react-icons/fa";
 import SyntaxHighlighter from "react-syntax-highlighter/";
 import { stackoverflowDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -124,13 +123,13 @@ export default function ReactGPTindex() {
         />
       </div>
       <div className="flex justify-end mt-2 h-auto">
-        <a href='https://github.com/kalmix/GPT-React' target='_blank'>
+        <a href='https://github.com/kalmix/GPT-React' target='_blank' rel='noreferrer'>
         <FaGithub
           className="z-5 text-gray-600 text-center inline ml-2 mt-2 align-middle hover:opacity-40 transition-all duration-300"
           size={32}
         />
         </a>
-        <a href='https://gpt-on-react.vercel.app/' target='_blank'>
+        <a href='https://gpt-on-react.vercel.app/' target='_blank' rel='noreferrer'>
         <PiLinkSimpleDuotone
           className="z-5 text-blue-400 text-center inline mr-2 ml-2 mt-2 align-middle hover:opacity-40 transition-all duration-300"
           size={32}

@@ -166,10 +166,6 @@ slide-in {
   background-color: #a8bbbf;
 }
 
-@font-face {
-  font-family: 'Grotezk Medium';
-  src: url(./fonts/LazareGroteskTrial-Medium-BF647806db24482.otf);
-}
 
 .random-word {
   color: #6c63ff;

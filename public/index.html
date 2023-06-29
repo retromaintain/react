@@ -84,9 +84,13 @@ $(window).load(function () {
   setTimeout(function () {
     $(".preloader-wrapper").fadeOut(500, function () {
       $("body").removeClass("preloader-site");
-      setCookie("preloaderShown", "true", 365); // Set the cookie to indicate preloader has been shown
+      setCookie("preloaderShown", "true", 365);
+       // Set the cookie to indicate preloader has been shown
     });
   }, 300);
+  console.clear();
+  console.log('%cHello? Hi, there!', 'font-size: 40px; color: #7274ab;');
+  console.log('%cGo to %cgithub.com/kalmix%c to explore the code!', 'font-size: 20px; color: #7274ab;', 'font-size: 20px; color: #7274ab; text-decoration: underline;', 'font-size: 20px; color: #7274ab;');
 });
 
 // Function to get a cookie value

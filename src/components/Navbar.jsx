@@ -208,7 +208,7 @@ function NavList() {
         <a href="https://discord.gg/FJbQK6U8k7" target="_blank">
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-font-white">
           <RxDiscordLogo className="h-[18px] w-[18px]" />
-          Discord
+          Fun
         </ListItem>
         </a>
       </Typography>

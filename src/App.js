@@ -15,10 +15,11 @@ import { useRef } from 'react'
 
 
 
-
 function App() {
   const ref = useRef(null);
 
+  console.warn = () => {};
+  
   const options = {
     smooth: true,
     multiplier: 0.7,

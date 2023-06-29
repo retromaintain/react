@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import "../App.css";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { Button, Tooltip } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 import RandomizedText from "./RandomWord";
 import TypeScriptFill from './TypeScript';
 
@@ -12,10 +11,10 @@ import TooltipIcon from "./TooltipIcon";
 
 
 function IndexPage() {
-  const [show, setShow] = useState(false);
-
+  
   return (
     <>
+
       <div className="lg:px-6 xl:px-0 bg-dark lg:-mt-28 " data-scroll-section>
         <div className="container mx-auto relative z-20"></div>
         <div className="mx-auto container relative z-0 px-4 xl:px-0">
@@ -59,7 +58,7 @@ function IndexPage() {
     <Player
       autoplay
       speed={0.7}
-      className="transition-all duration-700 ease-in-out sm:scale-125 transform-gpu scale-90 md:scale-110 astronaut"
+      className="transition-all duration-1000 ease-in-out sm:scale-125 transform-gpu scale-90 md:scale-110 astronaut"
       loop
       src="https://assets6.lottiefiles.com/packages/lf20_l3xc4jty.json"
     ></Player>
@@ -114,5 +113,6 @@ function IndexPage() {
     </>
   );
 }
+
 
 export default IndexPage;

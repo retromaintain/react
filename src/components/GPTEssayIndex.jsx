@@ -1,9 +1,8 @@
 
 import React, { useState } from 'react';
-import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
-import { SiTailwindcss, SiJson, SiOpenai } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { SiJson, SiOpenai } from "react-icons/si";
 import { PiLinkSimpleDuotone } from "react-icons/pi";
-import { Button } from "@material-tailwind/react";
 import { FaGithub } from "react-icons/fa";
 import SyntaxHighlighter from "react-syntax-highlighter/";
 import { stackoverflowDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -11,41 +10,38 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { FaHammer } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
 
-const npminstall = `npm install axios`;
+const npminstall = `pip install requests`;
 
 
-const codeString = `
-//example of a request to the OpenAI API using Axios
-const axios = require('axios');
+const codeString = `import requests
 
-//token
-const OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY';
+API_URL = ''
+OPENAI_API_KEY = ''
 
-//request headers
-const headers = {
-  'Content-Type': 'application/json',
-  'Authorization': \`Bearer \${OPENAI_API_KEY}\`
-};
-
-//payload
-const data = {
-  model: 'gpt-3.5-turbo',
-  messages: [
-    { role: 'system', content: 'You are a helpful assistant.' },
-    { role: 'user', content: 'Hello!' }
-  ]
-};
+HEADERS = {
+    'Content-Type': 'application/json',
+    'Authorization': f'Bearer {OPENAI_API_KEY}'
+}
 
 
-//request
-axios.post('https://api.openai.com/v1/chat/completions', data, { headers })
-  .then(response => {
-    //log response
-    console.log(response.data);
-  })
-  .catch(error => {
-    console.error(error);
-  });
+def generate_essay(prompt, model):
+    payload = {
+        "model": model,
+        "messages": [
+            {
+                "role": "user",
+                "content": f"Write an essay about {prompt}, but do not include things such as introduction:, body:, title:, or in conclusion. Use the fist line for the title of the essay. Write at least 5 paragraphs. Don't count Paragraphs in the text, just write the content."
+            }
+        ],
+        "temperature": 1.0
+    }
+
+    response = requests.post(API_URL, headers=HEADERS, json=payload)
+    response.raise_for_status()
+
+    essay = response.json()['choices'][0]['message']['content']
+    return essay
+
 `;
 
 
@@ -99,33 +95,31 @@ export default function GPTEssayIndex() {
       <div className="lg:mt-14 sm:mt-10 mt-12">
         <img
           className="lg:block hidden w-full rounded-xl"
-          src="https://i.ibb.co/sJHr57F/image.png"
+          src="https://media.discordapp.net/attachments/924436818718494740/1121468054228979822/image.png?width=1200&height=636"
           alt="Group of people Chilling"
         />
         <img
           className="lg:hidden sm:block hidden w-full rounded-xl"
-          src="https://i.ibb.co/sJHr57F/image.png"
+          src="https://media.discordapp.net/attachments/924436818718494740/1121468054228979822/image.png?width=1200&height=636"
           alt="Group of people Chilling"
         />
         <img
           className="sm:hidden block w-full rounded-xl"
-          src="https://i.ibb.co/sJHr57F/image.png"
+          src="https://media.discordapp.net/attachments/924436818718494740/1121468054228979822/image.png?width=1200&height=636"
           alt="Group of people Chilling"
         />
       </div>
       <div className="flex justify-end mt-2 h-auto">
-        <a href='https://github.com/kalmix/GPT-React' target='_blank'>
+        <a href='https://github.com/kalmix/GPT-Essay' target='_blank' rel='noreferrer'>
         <FaGithub
           className="z-5 text-gray-600 text-center inline ml-2 mt-2 align-middle hover:opacity-40 transition-all duration-300"
           size={32}
         />
         </a>
-        <a href='https://gpt-on-react.vercel.app/' target='_blank'>
         <PiLinkSimpleDuotone
-          className="z-5 text-blue-400 text-center inline mr-2 ml-2 mt-2 align-middle hover:opacity-40 transition-all duration-300"
+          className="z-5 text-red-400 text-center inline mr-2 ml-2 mt-2 align-middle hover:opacity-40 transition-all duration-300"
           size={32}
         />
-        </a>
       </div>
       <hr className="border-gray-300 opacity-10 mt-4" />
 
@@ -157,7 +151,7 @@ export default function GPTEssayIndex() {
         
         <div className="bg-dark text-white p-4 rounded-md border text-font">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-gray-400">Open AI Axios Snippet:</span>
+            <span className="text-gray-400">api_utils.py:</span>
             <CopyToClipboard text={codeString} >
             <button
                 onClick={copyCode}
