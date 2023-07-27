@@ -6,12 +6,28 @@
   background: #121212;
 }
 
+::selection {
+  background: #a7a2ff;
+}
+
 body {
   background-color: #121212
 }
 
 .astronaut:hover + .moon {
   transform: scale(1.7);
+}
+
+.darkmode-toggle {
+  border: #a7a2ff 1px solid !important;
+  z-index: 0;
+
+
+}
+
+.darkmode-toggle--white {
+  background: #fff;
+  filter: invert(1);
 }
 
 
@@ -172,6 +188,8 @@ slide-in {
   font-family: 'Grotezk Medium';
   src: url(./fonts/LazareGroteskTrial-Medium-BF647806db24482.otf);
 }
+
+
 
 .random-word {
   color: #6c63ff;
@@ -346,3 +364,4 @@ html.has-scroll-dragging {
     right: auto;
     bottom: 0; 
 }
+

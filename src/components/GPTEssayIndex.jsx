@@ -50,6 +50,7 @@ def generate_essay(prompt, model):
 
 
 export default function GPTEssayIndex() {
+  
     
     const [buttonText, setButtonText] = useState('Copy');
     const [buttonClass, setButtonClass] = useState('bg-gray-800');

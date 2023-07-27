@@ -13,12 +13,12 @@ body {
 
 
 
-
 .react-icon-spin {
   animation: spin 2s infinite linear;
   color: #6C63FF !important;
   filter: drop-shadow(0 0 60px #6C63FF);
     transition: all .3s;
+    isolation: isolate !important;
 }
 
 .pulse {
@@ -142,6 +142,11 @@ slide-in {
   transition: all 0.5s;
 }
 
+.primary-color-noshadow {
+  color: #6c63ff;
+  box-shadow: none !important;
+}
+
 .text-font-white {
   font-family: 'Space Grotesk', sans-serif !important;
   color: #ffffff;
@@ -153,6 +158,14 @@ slide-in {
 
 ::-webkit-scrollbar-track {
   background-color: #121212;
+}
+
+.darkmode-toggle {
+  z-index: 100000000000 !important;
+}
+
+.darkmode-layer, .darkmode-toggle {
+  z-index: 9999999;
 }
 
 ::-webkit-scrollbar-thumb {

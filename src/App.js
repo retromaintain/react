@@ -9,13 +9,30 @@ import ReactGPT from './pages/ReactGPT';
 import CodeCord from './pages/CodeCord';
 import Kics from './pages/Kics';
 import GPTEssay from './pages/GPTEssay';
+import Darkmode from 'darkmode-js';
+
+
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 
 
 function App() {
+  const darkOptions = {
+ // default: 'unset'
+    time: '1s', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#ededed',  // default: '#fff'
+    buttonColorDark: '#121212',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: true, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+
+  const darkmode = new Darkmode(darkOptions);
+  darkmode.showWidget();
   const ref = useRef(null);
 
   console.warn = () => {};

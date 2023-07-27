@@ -69,8 +69,7 @@ export default function About3() {
         MongoDB
       </p>
       <p className="text-font-white text-base leading-6 dark:text-gray-200 mt-6">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
+      MongoDB is a flexible and scalable NoSQL database system designed for efficient handling of unstructured data, offering replication and high availability for data durability.
       </p>
     </div>
     <div>
@@ -78,8 +77,7 @@ export default function About3() {
         NodeJS
       </p>
       <p className="text-font-white text-base leading-6 dark:text-gray-200 mt-6">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
+      Node.js is a powerful and versatile JavaScript runtime that allows for server-side scripting and enables building scalable, high-performance applications using event-driven, non-blocking I/O paradigm.
       </p>
     </div>
     <div className="sm:block hidden">
@@ -87,8 +85,7 @@ export default function About3() {
         React
       </p>
       <p className="text-font-white text-base leading-6 dark:text-gray-200 mt-6">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
+      React is a popular JavaScript library used for building user interfaces. It allows developers to create reusable UI components and efficiently manage application state, resulting in interactive and dynamic web applications.
       </p>
     </div>
   </div>

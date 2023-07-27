@@ -3,11 +3,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { Button } from "@material-tailwind/react";
 import RandomizedText from "./RandomWord";
 import TypeScriptFill from './TypeScript';
-
 import { TbSpace } from "react-icons/tb";
-
-
 import TooltipIcon from "./TooltipIcon";
+
 
 
 function IndexPage() {

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      #grain {
+        pointer-events: none
+      }
+      </style>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="App.css" />
@@ -21,6 +26,19 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style>
+      .noise {
+        z-index: 1000000000000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: .04;
+      }
+    </style>
+  
     <style>
       /* Hide Scrollbar and Scroll Functionality */
       body.preloader-site {
@@ -60,6 +78,9 @@
     <title>Kalmix - Porfolio</title>
   </head>
   <body>
+    <canvas id="noise" class="noise"></canvas>
+
+    
         <div class="preloader-wrapper">
       <div class="preloader">
         
@@ -116,8 +137,108 @@ function setCookie(name, value, days) {
   document.cookie = name + "=" + value + expires + "; path=/";
 }
 
+function removeAllBackdropFilterBlurAndBoxShadow() {
+  const elements = document.querySelectorAll("*");
+  elements.forEach((element) => {
+    element.style.backdropFilter = "none";
+    element.style.boxShadow = "none";
+  });
+}
 
+// Call the function to remove backdrop-filter blur and box-shadow from all elements
+removeAllBackdropFilterBlurAndBoxShadow();
     </script>
+      <!-- <script>
+        const noise = () => {
+          let canvas, ctx;
+    
+          let wWidth, wHeight;
+    
+          let noiseData = [];
+          let frame = 0;
+    
+          let loopTimeout;
+    
+    
+          // Create Noise
+          const createNoise = () => {
+              const idata = ctx.createImageData(wWidth, wHeight);
+              const buffer32 = new Uint32Array(idata.data.buffer);
+              const len = buffer32.length;
+    
+              for (let i = 0; i < len; i++) {
+                  if (Math.random() < 0.5) {
+                      buffer32[i] = 0xff000000;
+                  }
+              }
+    
+              noiseData.push(idata);
+          };
+    
+    
+          // Play Noise
+          const paintNoise = () => {
+              if (frame === 9) {
+                  frame = 0;
+              } else {
+                  frame++;
+              }
+    
+              ctx.putImageData(noiseData[frame], 0, 0);
+          };
+    
+    
+          // Loop
+          const loop = () => {
+              paintNoise(frame);
+    
+              loopTimeout = window.setTimeout(() => {
+                  window.requestAnimationFrame(loop);
+              }, (1000 / 60));
+          };
+    
+    
+          // Setup
+          const setup = () => {
+              wWidth = window.innerWidth;
+              wHeight = window.innerHeight;
+    
+              canvas.width = wWidth;
+              canvas.height = wHeight;
+    
+              for (let i = 0; i < 10; i++) {
+                  createNoise();
+              }
+    
+              loop();
+          };
+    
+    
+          // Reset
+          let resizeThrottle;
+          const reset = () => {
+              window.addEventListener('resize', () => {
+                  window.clearTimeout(resizeThrottle);
+    
+                  resizeThrottle = window.setTimeout(() => {
+                      window.clearTimeout(loopTimeout);
+                      setup();
+                  }, 200);
+              }, false);
+          };
+    
+    
+          // Init
+          const init = (() => {
+              canvas = document.getElementById('noise');
+              ctx = canvas.getContext('2d');
+    
+              setup();
+          })();
+        };
+    
+        noise();
+      </script> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" class="!bg-black"></div>
     <!--
