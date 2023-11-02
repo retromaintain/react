@@ -9,7 +9,7 @@ import ReactGPT from './pages/ReactGPT';
 import CodeCord from './pages/CodeCord';
 import Kics from './pages/Kics';
 import GPTEssay from './pages/GPTEssay';
-import Darkmode from 'darkmode-js';
+// import Darkmode from 'darkmode-js';
 
 
 
@@ -31,15 +31,15 @@ function App() {
     autoMatchOsTheme: true // default: true
   }
 
-  const darkmode = new Darkmode(darkOptions);
-  darkmode.showWidget();
+  // const darkmode = new Darkmode(darkOptions);
+  // darkmode.showWidget();
   const ref = useRef(null);
 
   console.warn = () => {};
   
   const options = {
     smooth: true,
-    multiplier: 0.7,
+    multiplier: 0.78,
   } 
 
   return (

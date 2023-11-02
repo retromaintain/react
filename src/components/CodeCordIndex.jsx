@@ -10,7 +10,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { FaHammer } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
 import { FaDiscord } from 'react-icons/fa';
-import thumb from '../fonts/codecord-thumb.png';
+// import thumb from '../fonts/codecord-thumb.png';
 
 const npminstall = `npm install discord.js`;
 
@@ -94,17 +94,17 @@ export default function CodeCordIndex() {
       <div className="lg:mt-14 sm:mt-10 mt-12">
         <img
           className="lg:block hidden w-full rounded-xl"
-          src={thumb}
+          src='https://ucarecdn.com/8c91da24-406e-4ee5-bb3e-204a601e9e11/-/preview/1000x1000/-/quality/smart/-/format/auto/'
           alt="Group of people Chilling"
         />
         <img
           className="lg:hidden sm:block hidden w-full rounded-xl"
-          src={thumb}
+          src='https://ucarecdn.com/8c91da24-406e-4ee5-bb3e-204a601e9e11/-/preview/1000x1000/-/quality/smart/-/format/auto/'
           alt="Group of people Chilling"
         />
         <img
           className="sm:hidden block w-full rounded-xl"
-          src={thumb}
+          src='https://ucarecdn.com/8c91da24-406e-4ee5-bb3e-204a601e9e11/-/preview/1000x1000/-/quality/smart/-/format/auto/'
           alt="Group of people Chilling"
         />
       </div>

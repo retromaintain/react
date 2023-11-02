@@ -108,17 +108,17 @@ export default function ReactGPTindex() {
       <div className="lg:mt-14 sm:mt-10 mt-12">
         <img
           className="lg:block hidden w-full rounded-xl"
-          src="https://i.ibb.co/sJHr57F/image.png"
+          src="https://ucarecdn.com/49d3e99c-707f-47cd-bc19-8d5e06c843ca/-/preview/1000x1000/-/quality/smart/-/format/auto/"
           alt="Group of people Chilling"
         />
         <img
           className="lg:hidden sm:block hidden w-full rounded-xl"
-          src="https://i.ibb.co/sJHr57F/image.png"
+          src="https://ucarecdn.com/49d3e99c-707f-47cd-bc19-8d5e06c843ca/-/preview/1000x1000/-/quality/smart/-/format/auto/"
           alt="Group of people Chilling"
         />
         <img
           className="sm:hidden block w-full rounded-xl"
-          src="https://i.ibb.co/sJHr57F/image.png"
+          src="https://ucarecdn.com/49d3e99c-707f-47cd-bc19-8d5e06c843ca/-/preview/1000x1000/-/quality/smart/-/format/auto/"
           alt="Group of people Chilling"
         />
       </div>

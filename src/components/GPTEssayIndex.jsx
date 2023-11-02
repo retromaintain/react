@@ -96,17 +96,17 @@ export default function GPTEssayIndex() {
       <div className="lg:mt-14 sm:mt-10 mt-12">
         <img
           className="lg:block hidden w-full rounded-xl"
-          src="https://media.discordapp.net/attachments/924436818718494740/1121468054228979822/image.png?width=1200&height=636"
+          src="https://ucarecdn.com/b9e09388-bf28-4c0f-9599-4816e975b849/image_11_.webp"
           alt="Group of people Chilling"
         />
         <img
           className="lg:hidden sm:block hidden w-full rounded-xl"
-          src="https://media.discordapp.net/attachments/924436818718494740/1121468054228979822/image.png?width=1200&height=636"
+          src="https://ucarecdn.com/b9e09388-bf28-4c0f-9599-4816e975b849/image_11_.webp"
           alt="Group of people Chilling"
         />
         <img
           className="sm:hidden block w-full rounded-xl"
-          src="https://media.discordapp.net/attachments/924436818718494740/1121468054228979822/image.png?width=1200&height=636"
+          src="https://ucarecdn.com/b9e09388-bf28-4c0f-9599-4816e975b849/image_11_.webp"
           alt="Group of people Chilling"
         />
       </div>

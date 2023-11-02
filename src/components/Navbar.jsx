@@ -104,7 +104,7 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, color, path }, key) => (
       <a href={path} key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
+        <MenuItem className="flex items-center gap-3 rounded-lg hover:bg-black/60">
           <div className={`rounded-lg p-5 ${colors[color]}`}>
             {React.createElement(icon, {
               strokeWidth: 2,
@@ -120,7 +120,7 @@ function NavListMenu() {
             </Typography>
             <Typography
               variant="small"
-              className="font-normal text-font !text-gray-500"
+              className="font-normal text-font !text-gray-200"
             >
               {description}
             </Typography>

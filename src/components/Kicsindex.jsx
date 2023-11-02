@@ -121,17 +121,17 @@ export default function Kicsindex() {
       <div className="lg:mt-14 sm:mt-10 mt-12 rounded-xl">
         <img
           className="lg:block hidden w-full rounded-xl"
-          src="https://i.ibb.co/hDk8d9w/image.png"
+          src="https://ucarecdn.com/6b488f89-4e75-47c0-8ccc-d70801817d5b/-/preview/1000x1000/-/quality/smart/-/format/auto/"
           alt="Group of people Chilling"
         />
         <img
           className="lg:hidden sm:block hidden w-full rounded-xl"
-          src="https://i.ibb.co/hDk8d9w/image.png"
+          src="https://ucarecdn.com/6b488f89-4e75-47c0-8ccc-d70801817d5b/-/preview/1000x1000/-/quality/smart/-/format/auto/"
           alt="Group of people Chilling"
         />
         <img
           className="sm:hidden block w-full rounded-xl"
-          src="https://i.ibb.co/hDk8d9w/image.png"
+          src="https://ucarecdn.com/6b488f89-4e75-47c0-8ccc-d70801817d5b/-/preview/1000x1000/-/quality/smart/-/format/auto/"
           alt="Group of people Chilling"
         />
       </div>

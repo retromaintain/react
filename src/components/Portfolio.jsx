@@ -24,7 +24,7 @@ export default function PorfolioIndex() {
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110 hover:border hover:border-indigo-500 transition-all"
         style={{
           backgroundImage:
-            'url("https://i.ibb.co/sJHr57F/image.png")'
+            'url("https://ucarecdn.com/a90bed30-8e4d-4a8d-accf-910dc56e99fd/-/preview/500x500/-/quality/smart/-/format/auto/")'
         }}
       >
         <div className="w-full px-8 py-4 overflow-hidden rounded-b-xl backdrop-blur-lg bg-white/30 dark:bg-gray-800/60">
@@ -45,7 +45,7 @@ export default function PorfolioIndex() {
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110 hover:border hover:border-indigo-500 transition-all"
         style={{
           backgroundImage:
-            'url("https://i.ibb.co/Np5gNzW/image.png")'
+            'url("https://ucarecdn.com/474c9ffa-5a78-4f16-8630-56bcde8da764/-/preview/500x500/-/quality/smart/-/format/auto/")'
         }}
       >
         <div className="w-full px-8 py-4 overflow-hidden rounded-b-xl backdrop-blur-lg bg-white/30 dark:bg-gray-800/60 ">
@@ -65,7 +65,7 @@ export default function PorfolioIndex() {
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110  hover:border hover:border-orange-500 transition-all"
         style={{
           backgroundImage:
-            'url("https://i.ibb.co/6JssRxk/image.png")'
+            'url("https://ucarecdn.com/baf13b0c-b072-4036-9cd4-ee5e01f94a49/-/preview/500x500/-/quality/smart/-/format/auto/")'
         }}
       >
         <div className="w-full px-8 py-4 overflow-hidden rounded-b-xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/60">
@@ -86,7 +86,7 @@ export default function PorfolioIndex() {
         className="flex items-end overflow-hidden bg-contain rounded-xl h-96 hover:scale-110 hover:border hover:border-green-500 transition-all"
         style={{
           backgroundImage:
-            'url("https://i.ibb.co/P1CxTpf/image.png")'
+            'url("https://ucarecdn.com/ad037966-f26e-462c-9bb1-c84833f66152/-/preview/500x500/-/quality/smart/-/format/auto/")'
         }}
       >
         <div className="w-full px-8 py-4 overflow-hidden rounded-b-xl backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">

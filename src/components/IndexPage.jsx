@@ -18,7 +18,7 @@ function IndexPage() {
         <div className="mx-auto container relative z-0 px-4 xl:px-0">
           <div className="flex flex-col-reverse md:flex-row">
             <div className="md:w-3/5 md:pt-24 pb-10 lg:py-32 xl:py-48">
-            <h2 className=" text-center md:text-left text-gray-800 text-lg lg:text-2xl text-font" >
+            <h2 className=" text-center md:text-left text-gray-400 text-lg lg:text-2xl text-font" >
                 My name is
               </h2>
               <h1 data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" className="lg:ml-4 title primary-color-shadow text-3xl lg:text-6xl xl:text-9xl font-black text-gray-300 text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">

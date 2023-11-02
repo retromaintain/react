@@ -201,29 +201,27 @@ slide-in {
   width: auto;
 }
 
-@keyframes slidedown {
-  0% {
+.random-word {
+  color: #6c63ff;
+  display: inline-block;
+}
+
+@keyframes slideFade {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  25%, 75% {
     opacity: 1;
-  }
-  
-  5% {
-    opacity: 0;
-    transform: translateY(0.5em);
-  }
-  
-  7% {
-    transform: translateY(-1em);
-  }
-  
-  10% {
-    opacity: 0;
-  }
-  
-  20% {
     transform: translateY(0);
-    opacity: 100;
   }
 }
+
+
+.random-word {
+  animation: slideFade 4s ease infinite;
+}
+
 
 .bg-dark {
   background-color: #121212;
