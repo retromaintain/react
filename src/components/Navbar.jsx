@@ -319,23 +319,23 @@ export default function Example() {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden gap-2 lg:flex">
+          <div className="hidden gap-2 lg:flex items-center">
             <a href="https://medium.com/@kalmixdev" target="_blank">
               <AiFillMediumSquare
                 className="hover:opacity-50 transition-all duration-300"
-                size={25}
+                size={20}
               />
             </a>
             <a href="https://github.com/kalmix" target="_blank">
               <FaGithub
                 className="hover:opacity-50 transition-all duration-300"
-                size={25}
+                size={18}
               />
             </a>
             <a href="https://twitter.com/kalmixdev" target="_blank">
               <FaTwitter
                 className="hover:text-blue-500 transition-all duration-300"
-                size={25}
+                size={18}
               />
             </a>
           </div>

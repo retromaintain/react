@@ -5,7 +5,7 @@ import RandomizedText from "./RandomWord";
 import TypeScriptFill from './TypeScript';
 import { TbSpace } from "react-icons/tb";
 import TooltipIcon from "./TooltipIcon";
-
+import { Tooltip } from "@material-tailwind/react";
 
 
 function IndexPage() {
@@ -29,14 +29,22 @@ function IndexPage() {
               </h1>
               <hr className="w-1/2 md:w-1/4 my-4 md:my-8 border-gray-600 hidden lg:block" />
               <h2 className=" py-4 text-center md:text-left md:py-8 text-gray-600 text-lg lg:text-2xl text-font !pt-0">
-                I'm a self-taught interdisciplinary Developer, I'm currently
+                I'm a self-taught <span className="taught">interdisciplinary</span> Developer, I'm currently
                 working on <TypeScriptFill className="inline align-middle mb-2 "/> Open Source Projects while being an undergraduate SWE{" "}
                 <TooltipIcon  className="inline align-middle !mb-2"/>
               </h2>
+              
               <div className="w-full flex justify-center md:block lg:table-header-group">
-                 <Button size="lg" className="title primary-bg main-button">
+              <Tooltip content="Press The 'Space' Key" className="backdrop-blur-md bg-opacity-25 bg-gray-600 text-font-white text-base cursor-pointer ">
+                 {/* <Button size="lg" className="title primary-bg main-button cursor-pointer">
+                  
                   <TbSpace className="h-[18px] w-[18px] inline" /> Press Space to continue
-                </Button> 
+                </Button>  */}
+                <span className='inline-flex !bg-opacity-75 h-full title animate-background-shine cursor-not-allowed items-center justify-center rounded-full  border border-white/80 bg-[linear-gradient(110deg,#666899,45%,#fff,55%,#666899)] bg-[length:250%_100%] px-3 py-2 text-xl font-medium text-white backdrop-blur-3xl'>
+                Press Space <TbSpace className="h-[18px] w-[18px] inline mx-2" />  to continue
+    </span>
+                </Tooltip>
+                
               </div>
             </div>
             <div className="w-1/2 lg:w-full sm:w-2/5 h-64 md:h-auto md:w-auto m-auto flex items-center overflow-hidden z-50">

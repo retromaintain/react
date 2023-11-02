@@ -6,7 +6,7 @@ import GitHubCalendar from 'react-github-calendar';
 
 const ChartComponent = () => (
   <>
-  <div data-scroll-section>
+  <div data-scroll-section className="my-60">
   <div className="flex justify-center z-50 mt-28">
     <h1 className="lg:text-8xl text-3xl title font-semibold primary-color-noshadow my-4" data-scroll data-scroll-speed="2"><FaGithub className="inline align-middle mb-2 mr-2"/>GitHub <span className="text-white/75">Contributions.</span></h1>
     

@@ -206,6 +206,27 @@ slide-in {
   display: inline-block;
 }
 
+.taught {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+
+    
+    z-index: -1;
+    color: #6C63FF;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(78%) saturate(668%) hue-rotate(208deg) brightness(108%) contrast(112%);
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+    background-repeat: no-repeat;
+  }
+  
+}
+
 @keyframes slideFade {
   0%, 100% {
     opacity: 0;
