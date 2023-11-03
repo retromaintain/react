@@ -269,7 +269,7 @@ function NavList() {
           color="blue-gray"
           className="font-normal"
         >
-          <a href="/about">
+          <a href="/about" className="hover-anchor">
             <ListItem className="flex items-center gap-2 py-2 pr-4 text-font-white">
               <BiUser className="h-[18px] w-[18px]" />
               About Me

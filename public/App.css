@@ -11,6 +11,13 @@ body {
 }
 
 
+.box-shadow-img {
+  transition: box-shadow 0.3s; /* Add a smooth transition */
+}
+
+.hover-anchor:hover .box-shadow-img {
+  filter: blur(10px); /* Apply the box shadow when hovering */
+}
 
 
 .react-icon-spin {
@@ -56,7 +63,22 @@ body {
   stroke: white !important;
 }
 
+#cursor {
+  position: absolute;
+  left: -28px;
+  top: -34px;
+  will-change: transform;
+  transform: translate(-999px, -999px);
+  pointer-events: none;
+  z-index: 1;
+  
 
+  img {
+    will-change: transform;
+    transition: transform .5s linear;
+    
+  }
+}
 
 
 .primary-color {

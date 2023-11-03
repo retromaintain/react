@@ -18,6 +18,15 @@ body {
   transform: scale(1.7);
 }
 
+.box-shadow-img {
+  transition: box-shadow 0.3s; /* Add a smooth transition */
+}
+
+.hover-anchor:hover .box-shadow-img {
+  filter: blur(10px); /* Apply the box shadow when hovering */
+}
+
+
 .darkmode-toggle {
   border: #a7a2ff 1px solid !important;
   z-index: 0;
