@@ -1,13 +1,14 @@
 import * as React from 'react';
-import Example from '../components/Navbar';
+
 import IndexPage from '../components/IndexPage';
 import Footer from '../components/Footer';
-import transition from '../transition';
-import ChartComponent from '../components/ChartGitHub';
+//import ChartComponent from '../components/ChartGitHub';
 // import Hero2 from '../components/Hero2';
-
+import '../transition';
+import Example from '../components/Navbar';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { useRef } from 'react'
+import transition from '../transition';
 
 const Home = () => {
     const ref = useRef(null);
@@ -21,13 +22,13 @@ const Home = () => {
         <>
     <LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
-            <Example />
+             <Example />
             <IndexPage />
             {/* <Hero2 /> */}
-            <ChartComponent />
+            {/* <ChartComponent /> */}
             <Footer />
             </main>
-    </LocomotiveScrollProvider>
+     </LocomotiveScrollProvider> 
         </>
         
     );

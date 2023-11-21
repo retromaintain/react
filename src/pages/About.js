@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Example from '../components/Navbar';
 import About3 from '../components/About3';
 import Footer from '../components/Footer';
 import transition from '../transition';
+import Example from '../components/Navbar';
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { useRef } from 'react'
@@ -16,16 +16,18 @@ const About = () => {
     }
 
     return (
+        <>
         <LocomotiveScrollProvider options={options} containerRef={ref}>
             <main data-scroll-container ref={ref}>
         
-        <>
+    
             <Example />
                 <About3 />
-            <Footer />
-        </>
+                <Footer />
+        
         </main>
         </LocomotiveScrollProvider>
+        </>
     );
 };
 

@@ -13,14 +13,14 @@ export default function About3() {
   </p>
   <div className="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
     <div className="w-full lg:w-6/12">
-      <h2 className="title w-full text-left font-bold lg:text-5xl text-3xl lg:leading-10 text-white leading-9">
+      <h2 className="title w-full text-left font-bold lg:text-5xl text-3xl lg:leading-10 text-white leading-9 balance">
         The <span className="primary-color">delight</span> of self learning, it's a journey, really...
       </h2>
-      <p className="font-normal text-xl	 leading-6 text-gray-500 dark:text-gray-200 mt-6 text-font">
-      I am deeply passionate about embarking on a self-learning journey to master the art of coding. Just as the well-known saying goes, "Learning is a lifelong process," I firmly believe that continuous self-improvement is the key to unlocking new opportunities and personal growth.
+      <p className="font-normal text-xl	 leading-6 text-gray-500 dark:text-gray-200 mt-6 text-font balance">
+      I am deeply passionate about embarking on a self-learning journey to master the art of coding. Just as the well-known saying goes, <span className="primary-color">"Learning is a lifelong process"</span>, I firmly believe that continuous <span className="taught">self-improvement</span> is the key to unlocking new opportunities and personal growth.
       </p>
-      <p className="font-normal text-xl	 leading-6 text-gray-500 dark:text-gray-200 mt-6 text-font">
-      In today's fast-paced and ever-evolving world, acquiring coding skills has become increasingly valuable and empowering. The ability to write code allows individuals to bring their creative ideas to life, solve complex problems, and make a positive impact in various industries and sectors.
+      <p className="font-normal text-xl	 leading-6 text-gray-500 dark:text-gray-200 mt-6 text-font ">
+      In today's <i>fast-paced</i> and ever-evolving world, acquiring coding skills has become increasingly valuable and empowering. The ability to <span className="primary-color">write code</span> allows individuals to bring their creative ideas to life, solve complex problems, and make a positive impact in various industries.
       </p>
     </div>
     <div className="w-full lg:w-6/12">
@@ -69,7 +69,7 @@ export default function About3() {
         MongoDB
       </p>
       <p className="text-font-white text-base leading-6 dark:text-gray-200 mt-6">
-      MongoDB is a flexible and scalable NoSQL database system designed for efficient handling of unstructured data, offering replication and high availability for data durability.
+      MongoDB is a flexible and scalable NoSQL database system designed for efficient handling of unstructured data, offering replication and high availability for data durability long-term.
       </p>
     </div>
     <div>

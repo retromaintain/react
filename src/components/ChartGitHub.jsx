@@ -19,7 +19,7 @@ const ChartComponent = () => (
   <div className="flex justify-center m-5">
     
     <div className="flex justify-center bg-black/5 rounded-lg p-5 hover:scale-110 transition-all duration-700">
-      <a href="https://github.com/kalmix" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/kalmix" target="_blank" rel="noreferrer">
         <GitHubCalendar username="kalmix" colorScheme="dark" style={{ color: 'rgb(117 117 117)', fontFamily: "'Space Grotesk', sans-serif" }} />
       </a>
     </div>

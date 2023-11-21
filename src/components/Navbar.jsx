@@ -21,7 +21,9 @@ import {
 import { ChevronDownIcon, MenuAlt3Icon, XIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import { Transition, Dialog } from "@headlessui/react";
-import { AiFillMediumSquare, AiOutlineMail } from "react-icons/ai";
+import { PiMediumLogo } from "react-icons/pi";
+
+
 import { FaGithub } from "react-icons/fa";
 import { PiPaperclip } from "react-icons/pi";
 import { RxDiscordLogo } from "react-icons/rx";
@@ -35,6 +37,10 @@ import { AiOutlineCamera } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import { useRef, useEffect } from "react";
+import { RxTwitterLogo } from "react-icons/rx";
+import { PiGithubLogo } from "react-icons/pi";
+
+
 // import Darkmode from "darkmode-js";
 
 const colors = {
@@ -319,21 +325,21 @@ export default function Example() {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden gap-2 lg:flex items-center">
-            <a href="https://medium.com/@kalmixdev" target="_blank">
-              <AiFillMediumSquare
+          <div className="hidden gap-3 lg:flex items-center">
+            <a href="https://medium.com/@kalmixdev" target="_blank" rel="noreferrer">
+              <PiMediumLogo 
                 className="hover:opacity-50 transition-all duration-300"
                 size={20}
               />
             </a>
-            <a href="https://github.com/kalmix" target="_blank">
-              <FaGithub
+            <a href="https://github.com/kalmix" target="_blank" rel="noreferrer">
+              <PiGithubLogo 
                 className="hover:opacity-50 transition-all duration-300"
                 size={18}
               />
             </a>
-            <a href="https://twitter.com/kalmixdev" target="_blank">
-              <FaTwitter
+            <a href="https://twitter.com/kalmixdev" target="_blank" rel="noreferrer">
+              <RxTwitterLogo 
                 className="hover:text-blue-500 transition-all duration-300"
                 size={18}
               />

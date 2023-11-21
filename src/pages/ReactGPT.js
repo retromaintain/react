@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Example from '../components/Navbar';
 import ReactGPTindex from '../components/ReactGPTindex';
 import Footer from '../components/Footer';
 import transition from '../transition';
-
+import Example from '../components/Navbar';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { useRef } from 'react'
 

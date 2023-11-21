@@ -1,11 +1,11 @@
 import React from "react";
 import "../App.css";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { Button, Tooltip } from "@material-tailwind/react";
-import RandomizedText from "./RandomWord";
-import TypeScriptFill from "./TypeScript";
+// import { Button, Tooltip } from "@material-tailwind/react";
+// import RandomizedText from "./RandomWord";
+// import TypeScriptFill from "./TypeScript";
 
-import TooltipIcon from "./TooltipIcon";
+// import TooltipIcon from "./TooltipIcon";
 
 function Hero2() {
   return (

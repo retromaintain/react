@@ -3,17 +3,18 @@ import * as React from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+// import { AnimatePresence } from 'framer-motion';
 import Porfolio from './pages/Porfolio';
 import ReactGPT from './pages/ReactGPT';
 import CodeCord from './pages/CodeCord';
 import Kics from './pages/Kics';
+import Example from './components/Navbar';
 import GPTEssay from './pages/GPTEssay';
 // import Darkmode from 'darkmode-js';
 
+import Footer from './components/Footer';
 
 
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { useRef, useEffect } from 'react'
 
 
@@ -36,21 +37,20 @@ function App() {
   const ref = useRef(null);
 
   console.warn = () => {};
-  
-  const options = {
-    smooth: true,
-    multiplier: 0.78,
-  } 
+
 
   return (
     <>
-    <LocomotiveScrollProvider options={options} containerRef={ref}>
-      <main data-scroll-container ref={ref}>
+    
+    
+    
     <div className="App bg-dark">
+    
       <BrowserRouter>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait"> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Porfolio />} />
         <Route path="/codecord" element={<CodeCord />} />
@@ -59,14 +59,15 @@ function App() {
         <Route path="/gpt-essay" element={<GPTEssay />} />
         
 
-      {/* <Example />
-      <IndexPage /> */}
+     
+      {/* <IndexPage /> */}
       </Routes>
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
       </BrowserRouter>
+      
     </div>
-    </main>
-    </LocomotiveScrollProvider>
+    
+   
     </>
   );
 }

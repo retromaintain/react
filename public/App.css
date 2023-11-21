@@ -2,12 +2,15 @@
   text-align: center;
 }
 
+
+
 #root {
   background: #121212;
 }
 
 body {
-  background-color: #121212;
+  /* background-color: #121212; */
+
 }
 
 
@@ -63,19 +66,21 @@ body {
   stroke: white !important;
 }
 
+
+
 #cursor {
   position: absolute;
-  left: -28px;
-  top: -34px;
+  left: -90px;
+  top: -90px;
   will-change: transform;
   transform: translate(-999px, -999px);
   pointer-events: none;
-  z-index: 1;
-  
+  filter: drop-shadow(0 0 60px #6C63FF);
 
   img {
     will-change: transform;
-    transition: transform .5s linear;
+    transition: transform .1s linear;
+    
     
   }
 }
@@ -113,7 +118,11 @@ slide-in {
   height: 100vh;
   background: #121212;
   transform-origin: bottom;
-  z-index: 9999;
+  z-index: 2;
+}
+
+nav {
+  z-index: 999 !important;  
 }
 
 .slide-out {
@@ -122,9 +131,9 @@ slide-in {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #7274ab;
+  background: #121212;
   transform-origin: top;
-  z-index: 9999;
+  z-index: 2;
 }
 
 /* strong {
@@ -213,6 +222,7 @@ slide-in {
   -moz-animation: slidedown 4s infinite;
   display: inline-block;
   width: auto;
+  z-index: 100 !important;
 }
 
 @keyframes slidedown {
@@ -227,6 +237,7 @@ slide-in {
   
   7% {
     transform: translateY(-1em);
+    
   }
   
   10% {
@@ -240,7 +251,20 @@ slide-in {
 }
 
 .bg-dark {
-  background-color: #121212;
+  background: #121212;
+
+  }
+
+
+.bg-dark-dot {
+  --dot-bg: #121212;
+  --dot-color: white;
+  --dot-size: 0.5px;
+  --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
 }
 
 .bg-dark-blur {

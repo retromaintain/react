@@ -18,9 +18,11 @@ const RandomizedText = () => {
   ];
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const animationTime = getAnimationTime();
     
     const intervalId = setInterval(() => {
+      
       setPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
     }, animationTime);
 
@@ -41,7 +43,7 @@ const RandomizedText = () => {
   const currentPhrase = phrases[phraseIndex];
 
   return (
-    <span className="random-word">
+    <span className="random-word !z-[100]">
       {currentPhrase}
     </span>
   );

@@ -1,7 +1,7 @@
 import * as React from "react"
-import { Tooltip, Typography } from "@material-tailwind/react";
-import { FaGithub } from "react-icons/fa";
-import GitHubCalendar from 'react-github-calendar';
+// import { Tooltip, Typography } from "@material-tailwind/react";
+// import { FaGithub } from "react-icons/fa";
+// import GitHubCalendar from 'react-github-calendar';
 import { Transition, Dialog } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { FaWindowClose, FaDiscord } from "react-icons/fa";

@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <>
-      <div data-scroll-section>
+      <div>
         <Transition appear show={isPromptMissingDialogOpen} as={Fragment}>
           <Dialog
             as="div"
@@ -57,7 +57,7 @@ export default function Footer() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white/5 backdrop-blur-3xl backdrop shadow-xl rounded-2xl">
+                <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all bg-white/5 backdrop-blur-3xl backdrop shadow-xl rounded-2xl">
                   <Dialog.Title
                     as="h2"
                     className="text-4xl title leading-6 text-center font-bold primary-color"
@@ -89,8 +89,8 @@ export default function Footer() {
           </Dialog>
         </Transition>
 
-        <footer
-          className={`mt-52 border-t border-gray-300 border-opacity-10 font-azeret-mono-regular text-gray-200 z-50 w-full text-font text-lg`}
+        <footer data-scroll-section
+          className={`mt-52 border-t border-gray-300 border-opacity-10 font-azeret-mono-regular text-gray-200 w-full text-font text-lg`}
         >
           <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="flex justify-center text-blue-600 ">
@@ -156,6 +156,7 @@ export default function Footer() {
                   href="https://twitter.com/kalmixdev"
                   rel="noreferrer"
                   target="_blank"
+                  
                   data-tooltip-content="Twitter: @kalmixdev"
                   data-tooltip-id="twitter"
                   className="hover:text-blue-400 transition-colors duration-300"

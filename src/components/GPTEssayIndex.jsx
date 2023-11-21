@@ -93,9 +93,9 @@ export default function GPTEssayIndex() {
         <hr className="border-gray-300 opacity-10 mt-8" />
       </div>
 
-      <div className="lg:mt-14 sm:mt-10 mt-12">
+      <div className="lg:mt-14 sm:mt-10 mt-12 w-100 h-100">
         <img
-          className="lg:block hidden w-full rounded-xl"
+          className="lg:block hidden w-full rounded-xl "
           src="https://ucarecdn.com/b9e09388-bf28-4c0f-9599-4816e975b849/image_11_.webp"
           alt="Group of people Chilling"
         />

@@ -14,9 +14,7 @@ body {
   background-color: #121212
 }
 
-.astronaut:hover + .moon {
-  transform: scale(1.7);
-}
+
 
 .box-shadow-img {
   transition: box-shadow 0.3s; /* Add a smooth transition */
@@ -118,13 +116,17 @@ slide-in {
   z-index: 9999;
 }
 
+.balance {
+  text-wrap: balance;
+}
+
 .slide-out {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #7274ab;
+  background: #121212;
   transform-origin: top;
   z-index: 9999;
 }

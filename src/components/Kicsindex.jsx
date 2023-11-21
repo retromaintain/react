@@ -5,7 +5,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from 'react-icons/si';
 import { FcGoogle } from 'react-icons/fc';
 import { PiLinkSimpleDuotone } from "react-icons/pi";
-import { FaGithub } from "react-icons/fa";
+
 import SyntaxHighlighter from "react-syntax-highlighter/";
 import { stackoverflowDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
@@ -76,6 +76,7 @@ export default function Kicsindex() {
 
   return (
     <div data-scroll-section>
+      
     <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
       <div className="lg:w-10/12 w-full">
         <p className="text-font text-left text-sm leading-3 text-white mb-2 hover:text-white cursor-pointer transition-all">
@@ -118,7 +119,7 @@ export default function Kicsindex() {
         <hr className="border-gray-300 opacity-10 mt-8" />
       </div>
 
-      <div className="lg:mt-14 sm:mt-10 mt-12 rounded-xl">
+      <div className="lg:mt-14 sm:mt-10 mt-12 rounded-xl w-100 h-100">
         <img
           className="lg:block hidden w-full rounded-xl"
           src="https://ucarecdn.com/6b488f89-4e75-47c0-8ccc-d70801817d5b/-/preview/1000x1000/-/quality/smart/-/format/auto/"

@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Example from '../components/Navbar';
 import PorfolioIndex from '../components/Portfolio';
 import Footer from '../components/Footer';
 import transition from '../transition';
-
+import Example from '../components/Navbar';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { useRef } from 'react'
 
@@ -20,7 +19,7 @@ const Porfolio = () => {
             <main data-scroll-container ref={ref}>
         
         <>
-            <Example />
+             <Example /> 
                 <PorfolioIndex />
             <Footer />
         </>
